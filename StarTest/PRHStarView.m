@@ -62,19 +62,28 @@
 
 	for (NSUInteger i = 0U, numOps = [path elementCount]; i < numOps; ++i) {
 		NSString *elementTypeName;
+		NSString *pointsStr;
 
-		switch ([path elementAtIndex:i]) {
+		NSPoint points[4];
+		switch ([path elementAtIndex:i associatedPoints:points]) {
 			case NSMoveToBezierPathElement:
 				elementTypeName = @"moveto";
+				pointsStr = [NSString stringWithFormat:@"%f %f", points[0].x, points[0].y];
 				break;
 			case NSLineToBezierPathElement:
 				elementTypeName = @"lineto";
+				pointsStr = [NSString stringWithFormat:@"%f %f", points[0].x, points[0].y];
 				break;
 			case NSCurveToBezierPathElement:
 				elementTypeName = @"curveto";
+				pointsStr = [NSString stringWithFormat:@"%f %f  %f %f  %f %f",
+					points[0].x, points[0].y,
+					points[1].x, points[1].y,
+					points[2].x, points[2].y];
 				break;
 			case NSClosePathBezierPathElement:
 				elementTypeName = @"closepath";
+				pointsStr = @"";
 				break;
 
 			default:
@@ -82,7 +91,7 @@
 				break;
 		}
 
-		NSLog(@"Path element %lu is %@", (unsigned long)i, elementTypeName);
+		NSLog(@"Path element %lu is %@ %@", (unsigned long)i, pointsStr, elementTypeName);
 	}
 
 	[path setLineWidth:strokeWidth];

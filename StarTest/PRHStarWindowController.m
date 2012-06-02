@@ -21,6 +21,7 @@
 - (id)initWithWindow:(NSWindow *)window {
 	self = [super initWithWindow:window];
 	if (self) {
+		self.shouldClosePath = true;
 	}
 	return self;
 }
@@ -32,6 +33,7 @@
 	[super windowDidLoad];
 
 	[self.window setAspectRatio:(NSSize){ 1.0, 1.0 }];
+	self.starView.shouldClosePath = self.shouldClosePath;
 }
 
 - (void) setShouldClosePath:(bool)scp {
