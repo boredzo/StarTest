@@ -13,6 +13,9 @@
 		31E8FD31157A9644000440C5 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 31E8FD2F157A9644000440C5 /* Credits.rtf */; };
 		31E8FD34157A9644000440C5 /* PRHAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 31E8FD33157A9644000440C5 /* PRHAppDelegate.m */; };
 		31E8FD37157A9644000440C5 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31E8FD35157A9644000440C5 /* MainMenu.xib */; };
+		31E8FD40157A96B0000440C5 /* PRHStarWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31E8FD3E157A96B0000440C5 /* PRHStarWindowController.m */; };
+		31E8FD42157A96D5000440C5 /* PRHStarWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31E8FD44157A96D5000440C5 /* PRHStarWindowController.xib */; };
+		31E8FD47157A980F000440C5 /* PRHStarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 31E8FD46157A980F000440C5 /* PRHStarView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,14 +24,19 @@
 		31E8FD23157A9644000440C5 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		31E8FD24157A9644000440C5 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		31E8FD25157A9644000440C5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		31E8FD28157A9644000440C5 /* StarTest-Info.plist */ = {isa = PBXFileReference; path = "StarTest-Info.plist"; sourceTree = "<group>"; };
+		31E8FD28157A9644000440C5 /* StarTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "StarTest-Info.plist"; sourceTree = "<group>"; };
 		31E8FD2A157A9644000440C5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		31E8FD2C157A9644000440C5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		31E8FD2E157A9644000440C5 /* StarTest-Prefix.pch */ = {isa = PBXFileReference; path = "StarTest-Prefix.pch"; sourceTree = "<group>"; };
+		31E8FD2E157A9644000440C5 /* StarTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "StarTest-Prefix.pch"; sourceTree = "<group>"; };
 		31E8FD30157A9644000440C5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		31E8FD32157A9644000440C5 /* PRHAppDelegate.h */ = {isa = PBXFileReference; path = PRHAppDelegate.h; sourceTree = "<group>"; };
+		31E8FD32157A9644000440C5 /* PRHAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PRHAppDelegate.h; sourceTree = "<group>"; };
 		31E8FD33157A9644000440C5 /* PRHAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PRHAppDelegate.m; sourceTree = "<group>"; };
 		31E8FD36157A9644000440C5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		31E8FD3D157A96B0000440C5 /* PRHStarWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRHStarWindowController.h; sourceTree = "<group>"; };
+		31E8FD3E157A96B0000440C5 /* PRHStarWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRHStarWindowController.m; sourceTree = "<group>"; };
+		31E8FD43157A96D5000440C5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/PRHStarWindowController.xib; sourceTree = "<group>"; };
+		31E8FD45157A980F000440C5 /* PRHStarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRHStarView.h; sourceTree = "<group>"; };
+		31E8FD46157A980F000440C5 /* PRHStarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRHStarView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +93,11 @@
 				31E8FD32157A9644000440C5 /* PRHAppDelegate.h */,
 				31E8FD33157A9644000440C5 /* PRHAppDelegate.m */,
 				31E8FD35157A9644000440C5 /* MainMenu.xib */,
+				31E8FD3D157A96B0000440C5 /* PRHStarWindowController.h */,
+				31E8FD3E157A96B0000440C5 /* PRHStarWindowController.m */,
+				31E8FD44157A96D5000440C5 /* PRHStarWindowController.xib */,
+				31E8FD45157A980F000440C5 /* PRHStarView.h */,
+				31E8FD46157A980F000440C5 /* PRHStarView.m */,
 				31E8FD27157A9644000440C5 /* Supporting Files */,
 			);
 			path = StarTest;
@@ -156,6 +169,7 @@
 				31E8FD2B157A9644000440C5 /* InfoPlist.strings in Resources */,
 				31E8FD31157A9644000440C5 /* Credits.rtf in Resources */,
 				31E8FD37157A9644000440C5 /* MainMenu.xib in Resources */,
+				31E8FD42157A96D5000440C5 /* PRHStarWindowController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -168,6 +182,8 @@
 			files = (
 				31E8FD2D157A9644000440C5 /* main.m in Sources */,
 				31E8FD34157A9644000440C5 /* PRHAppDelegate.m in Sources */,
+				31E8FD40157A96B0000440C5 /* PRHStarWindowController.m in Sources */,
+				31E8FD47157A980F000440C5 /* PRHStarView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,6 +212,14 @@
 				31E8FD36157A9644000440C5 /* en */,
 			);
 			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		31E8FD44157A96D5000440C5 /* PRHStarWindowController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				31E8FD43157A96D5000440C5 /* en */,
+			);
+			name = PRHStarWindowController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
