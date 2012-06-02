@@ -33,17 +33,12 @@
 	while (numPoints--) {
 		currentAngle += halfAngle;
 		[path lineToPoint:(NSPoint){ proximalRadius * cos(currentAngle), proximalRadius * sin(currentAngle) }];
-		currentAngle += halfAngle;
-		[path lineToPoint:(NSPoint){ distalRadius * cos(currentAngle), distalRadius * sin(currentAngle) }];
-	}
-
-	currentAngle += halfAngle;
-	[path lineToPoint:(NSPoint){ proximalRadius * cos(currentAngle), proximalRadius * sin(currentAngle) }];
-	if (self.shouldClosePath)
-		[path closePath];
-	else {
-		currentAngle += halfAngle;
-		[path lineToPoint:(NSPoint){ distalRadius * cos(currentAngle), distalRadius * sin(currentAngle) }];
+		if (numPoints == 0 && self.shouldClosePath)
+			[path closePath];
+		else {
+			currentAngle += halfAngle;
+			[path lineToPoint:(NSPoint){ distalRadius * cos(currentAngle), distalRadius * sin(currentAngle) }];
+		}
 	}
 
 	NSAffineTransform *recenter = [NSAffineTransform transform];
